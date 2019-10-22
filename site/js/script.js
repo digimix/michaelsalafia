@@ -5,7 +5,7 @@
 
     $(window).on("load", function() {
 
-        // Site loader 
+        // Site loader
 
         $(".loader-inner").fadeOut();
         $(".loader").delay(200).fadeOut("slow");
@@ -23,8 +23,12 @@
         states: {
             "default-state": {
                 gradients: [
+                    // default from theme
                     ['#4e93e6', '#864be3'],
                     ['#864be3', '#4e93e6']
+                    // Digimix style colors
+                    // ['#24A3BF', '#1FAFBF'],
+                    // ['#25C7D9', '#A3D3D9']
                 ],
                 transitionSpeed: 2000
             }
@@ -71,7 +75,7 @@
     });
 
 
-    // Site slider 
+    // Site slider
 
     $("#testimonial-carousel, #services-carousel").owlCarousel({
         navigation: false,
@@ -97,7 +101,7 @@
     });
 
 
-    // Skills bar 
+    // Skills bar
 
     $(".percentage").each(function() {
         var height = $(this).text();
@@ -114,7 +118,7 @@
     });
 
 
-    // Portfolio setup 
+    // Portfolio setup
 
     $('.venobox').venobox({
         titleattr: 'data-title',
@@ -147,7 +151,7 @@
     });
 
 
-    // Form validation 
+    // Form validation
 
     var inputName = $('input#name');
     var inputEmail = $('input#email');
